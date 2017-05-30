@@ -1,0 +1,88 @@
+body
+{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+img.bg 
+{
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 2000px;
+	
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+	
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+  
+  z-index: -999;
+}
+
+@media screen and (max-width: 2000px) 
+{ /* Specific to this particular image */
+  img.bg {
+    left: 50%;
+    margin-left: -1000px;   /* 50% */
+  }
+}
+
+header
+{
+  text-align: center;
+  color: white;
+  position: fixed;
+  width: 100%;
+  font-size: 17vw;
+  line-height: 100px;
+  height: 100px;
+  color: white;
+  transition: all 0.4s ease;
+  top: 0;
+  z-index: 999;
+}
+
+header.sticky {
+  font-size: 7vw;
+  line-height: 60px;
+  height: 60px;
+  background: #7e653e;
+}
+
+header h1#logo
+{
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: inherit;
+}
+
+.description
+{
+  margin-top: 150px;
+  margin-bottom: 40px;
+  background-color: white;
+}
+
+.description p
+{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.menu
+{
+  background-color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.menu p
+{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
